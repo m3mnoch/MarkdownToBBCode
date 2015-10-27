@@ -1,0 +1,14 @@
+[
+{
+	"id" : "Plugins",
+	"caption": "Plugins",
+	"children":
+	[
+	{
+	    "id" : "MarkdownToBBCode",
+	    "caption" : "MarkdownToBBCode",
+	    "command" : "markdowntobbcode"
+	}
+	]
+}
+]

@@ -40,6 +40,7 @@ class MarkdowntobbcodeCommand(sublime_plugin.TextCommand):
 				s = re.sub(r"<(https?:\S+)>", "[url=\\1]\\1[/url]", s)
 				s = re.sub(r"\B([*_]{2})\b(.+?)\1\B", "[b]\\2[/b]", s)
 				s = re.sub(r"_([^_]+)_", "[i]\\1[/i]", s)
+				s = re.sub(r"\*([^\*]+)\*", "[b]\\1[/b]", s)
 				return p % s
 			return inline
 		
